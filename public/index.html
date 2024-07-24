@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minefield Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="player" id="player1">Player 1</div>
+      <div class="minefield" id="minefield">
+        <div class="box" id="box0" onclick="play(0)"></div>
+        <div class="box" id="box1" onclick="play(1)"></div>
+        <div class="box" id="box2" onclick="play(2)"></div>
+        <div class="box" id="box3" onclick="play(3)"></div>
+        <div class="box" id="box4" onclick="play(4)"></div>
+        <div class="box" id="box5" onclick="play(5)"></div>
+        <div class="box" id="box6" onclick="play(6)"></div>
+        <div class="box" id="box7" onclick="play(7)"></div>
+        <div class="box" id="box8" onclick="play(8)"></div>
+        <div class="box" id="box9" onclick="play(9)"></div>
+      </div>
+      <div class="player" id="player2">Player 2</div>
+    </div>
+    <button id="replayButton" onclick="resetGame()">Replay</button>
+    <button id="exitButton" onclick="exitGame()">Exit Game Room</button>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

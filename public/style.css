@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.player {
+  margin: 0 20px;
+  font-size: 24px;
+}
+
+.minefield {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  grid-template-rows: repeat(2, 50px);
+  gap: 5px;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
